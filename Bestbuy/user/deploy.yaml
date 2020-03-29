@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: users-service
+  labels:
+    app: users
+spec:
+  selector:
+    app: users
+  ports:
+  - port: 80
+    targetPort: 8060
+    protocol: TCP
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: users
+  labels:
+    app: users
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: users
+  template:
+    metadata:
+      labels:
+        app: users
+    spec:
+      containers:
+      - name: users
+        image: nimit07/nagp-micro-assign-user:latest
+        ports:
+        - containerPort: 8060

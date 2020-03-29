@@ -1,0 +1,7 @@
+spring.application.name=aggregator
+server.port=8090
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka
+
+orders.host-url=${ORDERS_API_URL}
+
+users.host-url=${USERS_API_URL}

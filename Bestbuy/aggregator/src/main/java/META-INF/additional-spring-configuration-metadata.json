@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "users.host-Url",
+    "type": "java.lang.String",
+    "description": "A description for 'users.host-Url'"
+  },
+  {
+    "name": "users.hostUrl",
+    "type": "java.lang.String",
+    "description": "A description for 'users.hostUrl'"
+  }
+]}
