@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package org.bestbuy.user.exception;
+
+/**
+ * @author nimitjohri
+ *
+ */
+public class UserNotFoundException extends RuntimeException {
+	
+	public UserNotFoundException(Integer userId) {
+		super("User id not found : " + userId);
+	}
+}

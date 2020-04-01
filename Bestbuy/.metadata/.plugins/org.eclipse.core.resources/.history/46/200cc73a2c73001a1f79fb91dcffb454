@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package org.bestbuy.user.exception;
+
+/**
+ * @author nimitjohri
+ *
+ */
+public class UserNotFoundException {
+
+}
